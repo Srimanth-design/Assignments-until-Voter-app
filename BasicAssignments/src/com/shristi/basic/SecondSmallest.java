@@ -7,9 +7,11 @@ public class SecondSmallest {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int array[] = new int[5];
-		System.out.println("Enter the values of array");
 		Scanner input = new Scanner(System.in);
+		System.out.println("No of elements: ");
+		int number = input.nextInt();
+		int array[] = new int[number];
+		System.out.println("Enter the values of array");
 
 		for (int i = 0; i < array.length; i++) {
 			array[i] = input.nextInt();

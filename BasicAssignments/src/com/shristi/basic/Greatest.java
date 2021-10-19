@@ -18,25 +18,26 @@ public class Greatest {
 		 * System.out.println(great_number);
 		 */
 
-		Scanner scan = new Scanner(System.in);
-		int values[] = new int[3];
+		Scanner input = new Scanner(System.in);
+		System.out.println("No of elements: ");
+		int number = input.nextInt();
+		int values[] = new int[number];
+
 		// populating
 		System.out.println("Enter input array");// three numbered array
 		for (int i = 0; i < values.length; i++) {
-			values[i] = scan.nextInt();
+			values[i] = input.nextInt();
 		}
 		// the work
 
-		for (int i = 0; i < (values.length - 2); i++) {
-			if (values[i] > values[i + 1] && values[i] > values[i + 2]) {
-				System.out.println(values[i] + " is the greatest of the given array");
-			} else if (values[i + 1] > values[i + 2]) {
-				System.out.println(values[i + 1] + " is the greatest of the given array");
-			} else {
-				System.out.println(values[i + 2] + " is the greatest of the given array");
+		int greater = values[0];
+		for (int i = 0; i < values.length; i++) {
+			if (greater < values[i]) {
+				greater = values[i];
 			}
 		}
-		scan.close();
+		System.out.println("The greatest of all is " + greater);
+		input.close();
 	}
 
 }

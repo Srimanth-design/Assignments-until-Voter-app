@@ -2,10 +2,12 @@ package com.shristi.basic;
 
 import java.util.Scanner;
 
-public class Smallest {
+public class Duplicates {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+
+		// finding the duplicates
 
 		Scanner input = new Scanner(System.in);
 		System.out.println("No of elements: ");
@@ -17,15 +19,16 @@ public class Smallest {
 		for (int i = 0; i < values.length; i++) {
 			values[i] = input.nextInt();
 		}
-		// the work
-
-		int smallest = values[0];
+		
 		for (int i = 0; i < values.length; i++) {
-			if (smallest > values[i]) {
-				smallest = values[i];
+			
+			for (int j = i+1; j < values.length; j++) {
+				if(values[i]==values[j]) {
+					System.out.println("The duplicate value is "+values[j]);
+				}
 			}
 		}
-		System.out.println("Smallest is : " + smallest);
+		
 		input.close();
 	}
 
