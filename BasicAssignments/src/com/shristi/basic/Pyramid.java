@@ -11,7 +11,7 @@ public class Pyramid {
 		System.out.print("Enter the row count: ");
 		int given_input = input.nextInt();
 
-		for (int i = 0; i <= given_input; i++) {
+		for (int i = 1; i <= given_input; i++) {
 			for (int j = 1; j <= i; j++) {
 				System.out.print("*" + " " + "\t");
 			}
