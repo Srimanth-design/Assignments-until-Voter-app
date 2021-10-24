@@ -19,6 +19,7 @@ public class Voter {
 		try {
 			System.out.print("Enter age: " + " ");
 			age = input.nextInt();
+			input.nextLine();
 			if(age<18){
 				System.out.println("Under aged -- Not Eligible");
 				System.exit(0);
