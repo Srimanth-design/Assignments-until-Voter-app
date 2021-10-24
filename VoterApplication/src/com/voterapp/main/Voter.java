@@ -23,14 +23,12 @@ public class Voter {
 			location = input.next();
 			System.out.print("Enter voter ID: " + " ");
 			voterId = input.nextInt();
+			voting.CheckEligibility(age, location, voterId);
 		} catch (InputMismatchException e1) {
 			// TODO Auto-generated catch block
 			System.out.println("Input error -- Check again");
 		}
-
-		try {
-			voting.CheckEligibility(age, location, voterId);
-		} catch (NotEligibleException e) {
+		catch (NotEligibleException e) {
 			// TODO Auto-generated catch block
 			System.out.println(e.getMessage());
 		}
