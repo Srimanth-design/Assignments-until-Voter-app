@@ -19,6 +19,10 @@ public class Voter {
 		try {
 			System.out.print("Enter age: " + " ");
 			age = input.nextInt();
+			if(age<18){
+				System.out.println("Under aged -- Not Eligible");
+				System.exit(0);
+			}
 			System.out.print("Enter locality: " + " ");
 			location = input.next();
 			System.out.print("Enter voter ID: " + " ");
