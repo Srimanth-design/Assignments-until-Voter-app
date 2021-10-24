@@ -25,7 +25,7 @@ public class Voter {
 				System.exit(0);
 			}
 			System.out.print("Enter locality: " + " ");
-			location = input.next();
+			location = input.nextLine();
 			System.out.print("Enter voter ID: " + " ");
 			voterId = input.nextInt();
 			voting.CheckEligibility(age, location, voterId);
