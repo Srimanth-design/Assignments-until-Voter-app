@@ -9,7 +9,7 @@ import com.voterapp.exception.UnderAgeException;
 
 public class ElectionBooth {
 
-	String localities[] = new String[] { "RTCCrossroads", "NTRGardens", "KPHBColony", "JNTUCenter" };
+	String localities[] = new String[] { "RTC Crossroads", "NTR Gardens", "KPHB Colony", "JNTU Center" };
 
 	public boolean checkAge(int age) throws UnderAgeException {
 		// TODO Auto-generated method stub
